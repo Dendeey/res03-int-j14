@@ -1,3 +1,7 @@
+body
+{
+    background-color: white;
+}
 
 //*****BUTTON 1*****//
 
@@ -36,7 +40,6 @@
     overflow: hidden;
     
 }
-
 
 // Animate the size, inside
 .fill:hover,
@@ -88,7 +91,7 @@
 .slide:hover,
 .slide:focus 
 {
-    box-shadow: inset 6.5em 0 0 0 var(--hover);
+    box-shadow: inset 10em 0 0 0 var(--hover);
 }
 
 // Multiple shadows, one on the outside, another on the inside
@@ -108,13 +111,15 @@
 //=== Set button colors
 // If you wonder why use Sass vars or CSS custom properties...
 // Make a map with the class names and matching colors
-$colors: ( fill: #a972cb,
-pulse: #ef6eae,
-close: #ff7f82,
-raise: #ffa260,
-up: #e4cb58,
-slide: #8fc866,
-offset: #19bc8b);
+$colors: ( 
+    fill: #a972cb,
+    pulse: #ef6eae,
+    close: #ff7f82,
+    raise: #ffa260,
+    up: #e4cb58,
+    slide: #8fc866,
+    offset: #19bc8b
+);
 
 // Sass variables compile to a static string; CSS variables are dynamic and inherited
 // Loop through the map and set CSS custom properties using Sass variables
@@ -152,6 +157,7 @@ button
     margin: 1em;
     padding: 1em 2em;
 }
+
 
 
 
